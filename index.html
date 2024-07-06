@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>My Photogaphy</h1>
+        <div class="images">
+            <div class="img-1">
+            <img id="img1" src="cal.JPG" alt="my Photogaphy" width="150" height="200">
+        </div>
+            <div class="img-2">
+            <img id="img2" src="calculator.jpg" alt="my Photogaphy"  width="150" height="200">
+        </div>
+            <div class="img-3">
+            <img id="img3" src="IMG_6363.JPG" alt="my Photogaphy"  width="150" height="200">
+        </div>
+            <div class="img-4">
+            <img id="img4" src="IMG_5607.JPG" alt="my Photogaphy"  width="150" height="200">
+        </div>
+        </div>
+        <div class="big-imgs">
+        <div class="big-img">
+            <img id="big-image" src="IMG_4107.JPG" alt="big-img" width="300" height="400">
+        </div>
+        <p>pictures</p>
+    </div>
+    </div>
+    <script>
+        document.getElementById("img1")
+        document.getElementById("img2")
+        document.getElementById("img3")
+        document.getElementById("img4")
+        document.querySelector("#img1").onmouseover= function(){
+            document.querySelector("#big-image").src="IMG_4107.JPG"
+
+            document.querySelector("#big-image").alt="my photography"
+        }
+        document.querySelector("#img2").onmouseover= function(){
+            document.querySelector("#big-image").src="IMG_8481.JPG"
+
+            document.querySelector("#big-image").alt="my photography"
+        }
+        document.querySelector("#img3").onmouseover=function(){
+            document.querySelector("#big-image").src="IMG_6363.JPG"
+            document.querySelector("#big-image").alt="my photography"
+        }
+        document.querySelector("#img4").onmouseover=function(){
+            document.querySelector("#big-image").src="IMG_5607.JPG"
+            document.querySelector("#big-image").alt="my photography"
+        }
+    </script>
+</body>
+</html
